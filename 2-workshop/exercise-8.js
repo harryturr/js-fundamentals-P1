@@ -7,8 +7,11 @@ function exercise8() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-
-  console.log(`The sum is ${sum}`);
+let sum = 0
+for (let i = 1; i<5001; i++) {
+  (!(i % 4)) ? sum += i : null
+}
+console.log(`The sum is ${sum}`);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
