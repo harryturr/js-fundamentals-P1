@@ -15,6 +15,9 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for (let i=1; i<9; i++) {
+    console.log((!(i % 2)) ? '_#_#_#_#' : '#_#_#_#_')
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
