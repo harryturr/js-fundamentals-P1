@@ -15,6 +15,28 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+ 
+  let checkPrime = (n) => {
+    if (n===1) {
+      return false
+    }
+    else if (n===2) {
+      return true
+    } else {
+      for (let i=2; i<n; i++) {
+        if (n % i === 0) {
+          return false
+        }
+      } return true
+    }
+  }
+
+  for (let i=1; i<201; i++) {
+    if (checkPrime(i)) {
+      console.log(i)
+    }
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
