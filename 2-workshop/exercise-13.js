@@ -20,6 +20,24 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+ 
+  // recursive with cache for speed
+  let fib_cache = {}
+  let fib = (n) => {
+    if (n in fib_cache) {
+      return fib_cache[n]
+    }
+    else if (n == 0) {
+      return 0
+    } else if (n == 1) {
+      return 1
+    } else {
+      let sum = fib(n-1) + fib(n-2)
+      fib_cache[n] = sum
+      return sum 
+    }
+  }
+  console.log(fib(49))
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
